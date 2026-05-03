@@ -378,7 +378,7 @@ const validate = (name:any,symbol:any,supply:any) => {
           
          
           const timestamp=Number(decoded.args[0]);
-          const coolDown =timestamp+60; 
+          const coolDown =timestamp+86400; 
           console.log(timestamp);// BigInt → Number
           console.log(coolDown);
 
