@@ -1,0 +1,6 @@
+{
+  "name": "Chain Deployer Hub",
+  "description": "A streamlined dashboard for deploying ERC-20 tokens, Counter contracts, and GM (Greeting) contracts directly to the blockchain.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
