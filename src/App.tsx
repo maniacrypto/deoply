@@ -319,7 +319,7 @@ const validate = (name:any,symbol:any,supply:any) => {
         contract = await factory.deploy(
           params.name,
           params.ticker,
-          ethers.parseUnits(params.supply)
+          ethers.parseUnits(params.supply,18)
         );
         console.log(contract);
         url=url+"address/"+contract.target;
