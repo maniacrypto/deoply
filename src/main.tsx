@@ -14,6 +14,8 @@ import { base, baseSepolia, mainnet, sepolia } from 'wagmi/chains';
 // Create Query Client
 const queryClient = new QueryClient();
 
+console.log(import.meta.env.VITE_APP_URL);
+
 // const config = getDefaultConfig({
 //   appName: 'My Dapp',
 //   chains: [base],

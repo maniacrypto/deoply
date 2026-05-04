@@ -1,12 +1,20 @@
-import { createConfig, http } from '@wagmi/core'
-import { base, baseSepolia } from '@wagmi/core/chains'
+import { createConfig, http } from 'wagmi'
+import { base } from '@wagmi/core/chains'
+import { injected, walletConnect } from 'wagmi/connectors'
 
 export const config = createConfig({
-
   chains: [base],
-   transports: {
-    [base.id]: http()
-    // [baseSepolia.id]:http()
-    
+ connectors: [
+    injected(),
+
+    walletConnect({
+      projectId: import.meta.env.VITE_WALLETCONNECT_ID,
+      showQrModal: true,
+    }),
+  ],
+  transports: {
+    [base.id]: http(),
   },
-});
+
+ 
+})
