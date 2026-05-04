@@ -3,10 +3,10 @@ import { base, baseSepolia } from '@wagmi/core/chains'
 
 export const config = createConfig({
 
-  chains: [base,baseSepolia],
+  chains: [base],
    transports: {
-    [base.id]: http(),
-    [baseSepolia.id]:http()
+    [base.id]: http()
+    // [baseSepolia.id]:http()
     
   },
 });
