@@ -431,215 +431,86 @@ export const CONTRACT_TEMPLATES = {
   COUNTER: {
     name: "Counter",
     description: "A simple counter that can be incremented and decremented.",
-	address:"0x4D310fB5521de9d6142bC4c57D73E0538e87C1ca",
+	//address:"0x4D310fB5521de9d6142bC4c57D73E0538e87C1ca",
 
-    //address:"0x0450311c18085325b917857673001b874C66a8ba",
+    address:"0x0450311c18085325b917857673001b874C66a8ba",
     button:"Counter",
-	abi:[
-	{
-		"inputs": [],
-		"name": "increament",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_address",
-				"type": "address"
-			}
-		],
-		"name": "count",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "counter",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	}
-],
-//     abi:[
-//   {
-//     "inputs": [],
-//     "name": "increament",
-//     "outputs": [
-//       {
-//         "internalType": "uint256",
-//         "name": "",
-//         "type": "uint256"
-//       }
-//     ],
-//     "stateMutability": "nonpayable",
-//     "type": "function"
-//   },
-//   {
-//     "inputs": [
-//       {
-//         "internalType": "address",
-//         "name": "_address",
-//         "type": "address"
-//       }
-//     ],
-//     "name": "count",
-//     "outputs": [
-//       {
-//         "internalType": "uint256",
-//         "name": "",
-//         "type": "uint256"
-//       }
-//     ],
-//     "stateMutability": "view",
-//     "type": "function"
-//   },
-//   {
-//     "inputs": [
-//       {
-//         "internalType": "address",
-//         "name": "",
-//         "type": "address"
-//       }
-//     ],
-//     "name": "counter",
-//     "outputs": [
-//       {
-//         "internalType": "uint256",
-//         "name": "",
-//         "type": "uint256"
-//       }
-//     ],
-//     "stateMutability": "view",
-//     "type": "function"
-//   }
+// 	abi:[
+// 	{
+// 		"inputs": [],
+// 		"name": "increament",
+// 		"outputs": [
+// 			{
+// 				"internalType": "uint256",
+// 				"name": "",
+// 				"type": "uint256"
+// 			}
+// 		],
+// 		"stateMutability": "nonpayable",
+// 		"type": "function"
+// 	},
+// 	{
+// 		"inputs": [
+// 			{
+// 				"internalType": "address",
+// 				"name": "_address",
+// 				"type": "address"
+// 			}
+// 		],
+// 		"name": "count",
+// 		"outputs": [
+// 			{
+// 				"internalType": "uint256",
+// 				"name": "",
+// 				"type": "uint256"
+// 			}
+// 		],
+// 		"stateMutability": "view",
+// 		"type": "function"
+// 	},
+// 	{
+// 		"inputs": [
+// 			{
+// 				"internalType": "address",
+// 				"name": "",
+// 				"type": "address"
+// 			}
+// 		],
+// 		"name": "counter",
+// 		"outputs": [
+// 			{
+// 				"internalType": "uint256",
+// 				"name": "",
+// 				"type": "uint256"
+// 			}
+// 		],
+// 		"stateMutability": "view",
+// 		"type": "function"
+// 	}
 // ],
-    bytecode: "0x6080604052348015600f57600080fd5b5060008055610123806100226000396000f3fe6080604052348015600f57600080fd5b6004361060485760003560e01c806306661abd14604d578063371303c0146067578063d09de08a146081575b600080fd5b6051609b565b6040518082815260200191505060405180910390f35b606560a1565b005b607f60ab565b005b60005481565b600080546001019055565b6000805460019003905556fea26469706673582212204c3e387c8a6f3b7c8a6f3b7c8a6f3b7c8a6f3b7c8a6f3b7c8a6f3b7c8a6f3b64736f6c63430008120033"
-  },
-  GM: {
-	address:"0x875481D2665f0A49876e7474Aeae73d8d8d5Ade0",
-    //address:"0x6021dc6745Da6221d930F08ab21eF43121F8D556",
-    name: "GM (Greeting)",
-    description: "Store a 'Good Morning' message or personal greeting.",
-    button:"GM",
-	abi:[
+    abi:[
   {
-    "inputs": [
+    "inputs": [],
+    "name": "increament",
+    "outputs": [
       {
-        "internalType": "string",
-        "name": "_message",
-        "type": "string"
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
       }
     ],
-    "name": "sayGM",
-    "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [
       {
-        "internalType": "uint256",
-        "name": "lastMessageTime",
-        "type": "uint256"
-      }
-    ],
-    "name": "WaitTimeRemaining",
-    "type": "error"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "sender",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "message",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "timestamp",
-        "type": "uint256"
-      }
-    ],
-    "name": "SimpleGMCode__NewGM",
-    "type": "event"
-  },
-  {
-    "inputs": [
-      {
         "internalType": "address",
         "name": "_address",
         "type": "address"
       }
     ],
-    "name": "getEnDTime",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_address",
-        "type": "address"
-      }
-    ],
-    "name": "getLastMessageTime",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "getTotalGMs",
+    "name": "count",
     "outputs": [
       {
         "internalType": "uint256",
@@ -658,40 +529,11 @@ export const CONTRACT_TEMPLATES = {
         "type": "address"
       }
     ],
-    "name": "LastMessge",
+    "name": "counter",
     "outputs": [
       {
         "internalType": "uint256",
         "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "messages",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "sender",
-        "type": "address"
-      },
-      {
-        "internalType": "string",
-        "name": "message",
-        "type": "string"
-      },
-      {
-        "internalType": "uint256",
-        "name": "timestamp",
         "type": "uint256"
       }
     ],
@@ -699,7 +541,15 @@ export const CONTRACT_TEMPLATES = {
     "type": "function"
   }
 ],
-//     abi:[
+    bytecode: "0x6080604052348015600f57600080fd5b5060008055610123806100226000396000f3fe6080604052348015600f57600080fd5b6004361060485760003560e01c806306661abd14604d578063371303c0146067578063d09de08a146081575b600080fd5b6051609b565b6040518082815260200191505060405180910390f35b606560a1565b005b607f60ab565b005b60005481565b600080546001019055565b6000805460019003905556fea26469706673582212204c3e387c8a6f3b7c8a6f3b7c8a6f3b7c8a6f3b7c8a6f3b7c8a6f3b7c8a6f3b64736f6c63430008120033"
+  },
+  GM: {
+	//address:"0x875481D2665f0A49876e7474Aeae73d8d8d5Ade0",
+    address:"0x6021dc6745Da6221d930F08ab21eF43121F8D556",
+    name: "GM (Greeting)",
+    description: "Store a 'Good Morning' message or personal greeting.",
+    button:"GM",
+// 	abi:[
 //   {
 //     "inputs": [
 //       {
@@ -849,6 +699,156 @@ export const CONTRACT_TEMPLATES = {
 //     "type": "function"
 //   }
 // ],
+    abi:[
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_message",
+        "type": "string"
+      }
+    ],
+    "name": "sayGM",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "lastMessageTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "WaitTimeRemaining",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "message",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "SimpleGMCode__NewGM",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getEnDTime",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getLastMessageTime",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalGMs",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "LastMessge",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "messages",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "message",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+],
     
     bytecode: "[object Object]"
   }
