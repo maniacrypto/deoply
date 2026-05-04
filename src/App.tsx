@@ -270,14 +270,14 @@ export default function App() {
 
           const result = await writeContract(config, {
             abi: template.abi,
-            address: template.address,
+            address: import.meta.env.VITE_COUNTER_CONTRACT,
             functionName: 'increament',
             args: [],
           });
           console.log(result);
           const read = await readContract(config, {
             abi: template.abi,
-            address: template.address,
+            address: import.meta.env.VITE_COUNTER_CONTRACT,
             functionName: 'count',
             args: [user]
           });
@@ -303,7 +303,7 @@ export default function App() {
 
           const result = await readContract(config, {
             abi: template.abi,
-            address: template.address,
+            address: import.meta.env.VITE_GM_CONTRACT,
             functionName: 'getEnDTime',
             args: [user],
           });
@@ -321,7 +321,7 @@ export default function App() {
           else {
             const result = await writeContract(config, {
               abi: template.abi,
-              address: template.address,
+              address: import.meta.env.VITE_GM_CONTRACT,
               functionName: 'sayGM',
               args: ['GM'],
             });
