@@ -266,7 +266,7 @@ export default function App() {
           setStatus('success');
         }
         else if (type == 'COUNTER') {
-          alert("OK");
+          // alert("OK");
 
           const result = await writeContract(config, {
             abi: template.abi,
