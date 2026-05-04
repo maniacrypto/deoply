@@ -5,6 +5,7 @@ interface ImportMetaEnv {
   readonly VITE_APP_URL:string
   readonly VITE_GM_CONTRACT:string
   readonly VITE_COUNTER_CONTRACT:string
+  readonly VITE_BUILDER_CODE:string
 }
 
 interface ImportMeta {
