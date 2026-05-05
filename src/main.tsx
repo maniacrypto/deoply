@@ -10,7 +10,7 @@ import {
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import { WagmiProvider } from 'wagmi';
-import { Analytics } from "@vercel/analytics/next"
+
 import { base, baseSepolia, mainnet, sepolia } from 'wagmi/chains';
 // Create Query Client
 const queryClient = new QueryClient();
@@ -22,6 +22,7 @@ const queryClient = new QueryClient();
 //   chains: [base],
 // });
 createRoot(document.getElementById('root')!).render(
+  
      <QueryClientProvider client={queryClient}>
     <WagmiProvider config={config}>
       <RainbowKitProvider>
@@ -29,5 +30,7 @@ createRoot(document.getElementById('root')!).render(
     </RainbowKitProvider>
     </WagmiProvider>
     </QueryClientProvider>
+    
+     
   
 );

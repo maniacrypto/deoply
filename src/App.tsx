@@ -4,6 +4,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount } from 'wagmi';
 import { deployContract, writeContract, readContract} from '@wagmi/core'
 import { config } from './wagmiConfig';
+import { Analytics } from '@vercel/analytics/react';
 
 
 import {
@@ -391,6 +392,7 @@ export default function App() {
     return (
 
       <>
+       <Analytics />
 
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
