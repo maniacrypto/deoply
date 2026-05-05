@@ -10,6 +10,7 @@ import {
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import { WagmiProvider } from 'wagmi';
+import { Analytics } from "@vercel/analytics/next"
 import { base, baseSepolia, mainnet, sepolia } from 'wagmi/chains';
 // Create Query Client
 const queryClient = new QueryClient();
